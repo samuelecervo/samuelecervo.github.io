@@ -6,6 +6,11 @@
     display: flex;
     margin-left: auto;
   }
+  .hamburger span {
+  background-color: var(--color-accent) !important;
+    z-index: 9999 !important;
+
+}
 
   /* Navbar */
   .nav-container {
