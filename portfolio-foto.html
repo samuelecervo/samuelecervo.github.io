@@ -4,33 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio Foto | Samuele Cervo</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/page-portfolio.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/page-portfolio.css" />
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+
+  <!-- Masonry -->
   <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
 </head>
 <body>
 
-<!-- NAVBAR FISSA -->
-<!-- NAVBAR FISSA -->
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="container nav-container">
-    <a href="index.html" class="logo">Samuele Cervo</a>
-
+    <a href="./index.html" class="logo">Samuele Cervo</a>
     <ul class="nav-links">
-      <li><a href="index.html">Homepage</a></li>
-      <li><a href="servizi-video.html">Servizi Video</a></li>
-      <li><a href="servizi-foto.html">Servizi Foto</a></li>      
-      <li><a href="portfolio-foto.html">Portfolio</a></li>
-      <li><a href="contatti.html">Contatti</a></li>
+      <li><a href="./index.html">Homepage</a></li>
+      <li><a href="./servizi-video.html">Servizi Video</a></li>
+      <li><a href="./servizi-foto.html">Servizi Foto</a></li>      
+      <li><a href="./portfolio-foto.html">Portfolio</a></li>
+      <li><a href="./contatti.html">Contatti</a></li>
     </ul>
   </div>
 </nav>
-
 
 <br><br>
 <main class="section container">
@@ -48,14 +49,14 @@
   <div id="gallery" class="gallery-grid"></div>
 </main>
 
-<!-- Lightbox container -->
+<!-- Lightbox -->
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img" />
+  <img class="lightbox-content" id="lightbox-img" alt="Foto ingrandita" />
 </div>
 
-<script src="js/portfolio.js" defer></script>
-
+<!-- JS -->
+<script src="./js/portfolio.js" defer></script>
 
 <!-- CONTATTI -->
 <section id="contact" aria-label="Sezione contatti" tabindex="-1" style="text-align: center;">
@@ -69,13 +70,13 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>&copy; 2025 Samuele Cervo – Tutti i diritti riservati</p>
   <nav aria-label="Social media">
     <a href="https://instagram.com/samuele.cervo" target="_blank" rel="noopener noreferrer">Instagram</a>
   </nav>
 </footer>
-
 
 </body>
 </html>
