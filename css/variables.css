@@ -1,0 +1,20 @@
+:root {
+  --color-bg-dark: #121212;
+  --color-bg-section-dark: #1e1e1e;
+  --color-bg-section-darker: #2a2a2a;
+  --color-bg-footer: #111111;
+
+  --color-text-light: #e6e6e6;
+  --color-text-muted: #bbb;
+  --color-text-footer: #999;
+
+  --color-border-light: rgba(230, 230, 230, 0.1);
+  --color-border-dark: #333;
+  --color-border-darker: #444;
+  --color-border-darkest: #555;
+
+  --color-accent: #ff7f50;
+  --color-accent-hover: #ff5722;
+  --color-accent-rgba: rgba(255, 127, 80, 0.7);
+  --color-accent-rgba-hover: rgba(255, 87, 34, 0.8);
+}

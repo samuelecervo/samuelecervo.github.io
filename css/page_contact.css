@@ -1,0 +1,38 @@
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+h1{
+  color: var(--color-accent);
+}
+
+.contact-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-box {
+  background-color: var(--background-light);
+  border: 1px solid var(--border-color, #ddd);
+  padding: 2rem;
+  border-radius: 10px;
+  min-width: 250px;
+}
+
+.contact-box a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-extra {
+  margin-top: 3rem;
+  font-style: italic;
+  line-height: 1.6;
+}

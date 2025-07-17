@@ -1,0 +1,20 @@
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text-light);
+  background-color: var(--color-bg-dark);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}

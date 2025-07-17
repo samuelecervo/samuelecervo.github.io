@@ -1,0 +1,38 @@
+.section {
+  padding: 4rem 2rem 6rem 2rem;
+  max-width: 1500px;
+  margin: auto;
+  background-color: var(--color-bg-section-dark);
+  border-top: 1px solid var(--color-border-dark);
+}
+
+.section:first-of-type {
+  border-top: none;
+}
+
+#about {
+  background-color: var(--color-bg-section-dark);
+  border-top-color: var(--color-border-dark);
+}
+
+#services {
+  background-color: var(--color-bg-section-darker);
+  border-top-color: var(--color-border-darker);
+}
+
+#portfolio {
+  background-color: var(--color-bg-section-dark);
+  border-top-color: var(--color-border-dark);
+}
+
+#contact {
+  background-color: var(--color-bg-section-darker);
+  border-top-color: var(--color-border-darker);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-text-light);
+}
