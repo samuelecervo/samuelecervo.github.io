@@ -1,3 +1,9 @@
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
+  }
+}
+
 @media (max-width: 768px) {
     .gallery-grid {
     column-count: 2; /* 1 colonna, immagini più grandi */
@@ -6,11 +12,6 @@
     display: flex;
     margin-left: auto;
   }
-  .hamburger span {
-  background-color: var(--color-accent) !important;
-    z-index: 9999 !important;
-
-}
 
   /* Navbar */
   .nav-container {
@@ -18,22 +19,20 @@
     align-items: center;
     gap: 1rem;
   }
+  
+  
 
   .nav-links {
-    position: absolute;
-    top: 60px; /* altezza navbar */
-    right: 0;
-    background-color: var(--color-bg-dark);
-    width: 200px;
+    display: none;
     flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 0 0 0 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(100%);
-    transition: all 0.3s ease;
+    position: absolute;
+    top: 60px; /* adatta all'altezza navbar */
+    right: 1rem;
+    background-color: var(--accent-color, #333);
+    border-radius: 6px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 100;
   }
   
   .nav-links.open {
@@ -41,13 +40,20 @@
     pointer-events: auto;
     transform: translateX(0);
   }
-
-  .nav-links li {
-    margin: 0;
+    .nav-links li {
+    margin: 1rem 0;
   }
 
-  .nav-links a {
-    font-size: 1.2rem;
+    /* Quando nav attiva, mostra menu */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li a {
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    display: block;
   }
 
   /* Hero */
@@ -137,3 +143,4 @@
     font-size: 28px; /* testi più piccoli per mobile */
   }
 }
+
