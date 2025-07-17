@@ -1,0 +1,134 @@
+@media (max-width: 768px) {
+    .gallery-grid {
+    column-count: 2; /* 1 colonna, immagini più grandi */
+  }
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  /* Navbar */
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px; /* altezza navbar */
+    right: 0;
+    background-color: var(--color-bg-dark);
+    width: 200px;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 0 0 0 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  /* Hero */
+  .hero-slider {
+    height: 500px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  /* About */
+  .about-content {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Servizi */
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Portfolio categorie */
+  .portfolio-categories-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .category-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .category-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Contatti */
+  .contact-list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+
+  .hero-slider {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+  .portfolio-categories-grid {
+    grid-template-columns: 1fr; /* una colonna sola, immagini più grandi */
+    gap: 20px;
+  }
+
+  .category-card p {
+    font-size: 28px; /* testi più piccoli per mobile */
+  }
+}

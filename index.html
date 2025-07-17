@@ -26,6 +26,9 @@
   <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="./css/lightbox.css">
 
+  <link rel="stylesheet" href="./css/responsive.css">
+
+
   <script src="./script.js" defer></script>
 </head>
 <body>
@@ -34,6 +37,12 @@
 <nav class="navbar">
   <div class="container nav-container">
     <a href="./index.html" class="logo">Samuele Cervo</a>
+
+    <button class="hamburger" aria-label="Apri menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
     <ul class="nav-links">
       <li><a href="./index.html">Homepage</a></li>
@@ -44,6 +53,7 @@
     </ul>
   </div>
 </nav>
+
 
 <!-- HERO SLIDER -->
 <section class="hero-slider">
@@ -60,7 +70,7 @@
   <div class="hero-content">
     <h1>Samuele Cervo</h1>
     <p>Videomaker & Fotografo per Musica, Eventi e Brand</p>
-    <a href="#portfolio" class="btn-primary">Guarda il Portfolio</a>
+    <a href="./portfolio-foto.html" class="btn-primary">Guarda il Portfolio</a>
   </div>
 </section>
 
@@ -71,7 +81,32 @@
       <img src="./assets/images/chi_sono.jpg" alt="Samuele Cervo">
     </div>
     <div class="about-text">
-      <!-- (testo invariato) -->
+      <h2>Chi Sono</h2>
+        <p>
+          Mi chiamo <strong>Samuele Cervo</strong> e sono un <strong>videomaker</strong> e <strong>fotografo</strong> con base in Italia, 
+          specializzato nella creazione di <em>contenuti visivi per il mondo della musica, degli eventi e dei brand</em>.
+          Da anni lavoro a stretto contatto con <strong>artisti, etichette discografiche, agenzie</strong> e aziende, 
+          portando in ogni progetto un’estetica <em>curata e moderna</em>.
+        </p><br>
+
+        <p>
+          Realizzo <strong>videoclip musicali</strong>, <strong>shooting promozionali</strong>, 
+          <strong>contenuti verticali per social</strong> (Instagram, TikTok, YouTube)
+          e <strong>coperture foto/video</strong> per eventi live e backstage. 
+        </p><br>
+
+        <p>
+          Mi occupo dell’intero processo creativo:
+          dalla <em>pianificazione</em> alla <em>regia</em>, dalle <em>riprese</em> al <em>montaggio</em>, 
+          garantendo uno storytelling <strong>potente</strong> e <strong>su misura</strong> per ogni cliente.
+        </p><br>
+
+        <p>
+          Ogni progetto è un’opportunità per <strong>valorizzare un’identità</strong>, 
+          <strong>comunicare un messaggio</strong> e <strong>creare qualcosa che resti nel tempo</strong>. 
+          Collaboro con chi vuole <em>distinguersi</em>, con chi crede nella <strong>forza del visual</strong> 
+          e nella <em>qualità dei dettagli</em>.
+        </p>
     </div>
   </div>
 </section>
@@ -81,14 +116,160 @@
   <h2>I miei Servizi</h2>
   <p style="text-align: center; margin-bottom: 30px; margin-top: -30px;">Scopri tutti i <a href="./servizi-video.html">SERVIZI VIDEO</a> e <a href="./servizi-foto.html">SERVIZI FOTO</a></p>
   <div class="cards">
-    <!-- card 1–4 -->
+    <div class="card">
+      <a href="servizi-video.html">
+        <div class="icon">🎬</div>
+        <h3>Videoclip Musicali</h3>
+        <p>Regia, riprese e montaggio per artisti, band ed etichette discografiche.</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="servizi-foto.html">
+        <div class="icon">📸</div>
+        <h3>Shooting Fotografici</h3>
+        <p>Book in posa per artisti, influencer, modelle e content creator.</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="servizi-video.html">
+        <div class="icon">🎤</div>
+        <h3>Eventi Live</h3>
+        <p>Copertura foto e video completa di concerti, backstage e serate promozionali.</p>
+      </a>
+  </div>
+    <div class="card">
+      <a href="servizi-video.html">
+        <div class="icon">📱</div>
+        <h3>Contenuti Social</h3>
+        <p>Produzione di video verticali per Reels, TikTok e campagne virali.</p>
+    </a>
+  </div>
   </div>
 </section>
 
 <!-- PORTFOLIO VIDEO -->
 <section id="portfolio-video" class="section">
-  <!-- (contenuto invariato: immagini da YouTube) -->
-</section>
+<h2>Videoclip</h2>
+  <p style="margin-top :-40px;text-align: center;">Alcuni dei videoclip che ho diretto</p>
+  <div class="video-carousel">
+    <button class="carousel-btn prev-btn" aria-label="Video precedente">&#10094;</button>
+    <div class="carousel-track-container">
+      <ul class="carousel-track">
+        <!-- VIDEO 1 -->
+        <li class="carousel-slide">
+          <a href="https://www.youtube.com/watch?v=pKFIZvAuIsc" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/pKFIZvAuIsc/hqdefault.jpg" alt="Videoclip - Letto Singolo (2024)"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p><strong>SAMUELE - Letto Singolo (2024)</strong></p>
+        </li>
+
+        <li class="carousel-slide">
+          <a href="https://www.youtube.com/watch?v=UucPwo_uOIU" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/UucPwo_uOIU/hqdefault.jpg" alt="Videoclip Artista X"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p>HER|MESS - Tic Tac(2024)</p>
+        </li>
+
+        <li class="carousel-slide">
+          <a href="https://youtube.com/watch?v=zJY6QNCLxc8" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/zJY6QNCLxc8/hqdefault.jpg" alt="Videoclip Artista X"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p>Martina Nenni – BANALE (2023)</p>
+        </li>
+
+        <li class="carousel-slide">
+          <a href="https://youtu.be/UayAkKXdxNQ?si=V5o5QaTUm0g5XLeH" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/UayAkKXdxNQ/hqdefault.jpg" alt="Videoclip Artista X"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p>Giansi – Frasi Stupide (2023)</p>
+        </li>
+
+        <li class="carousel-slide">
+          <a href="https://youtu.be/Fj30SMGwwX4?si=3Uo1_szkm_QxIE8G" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/Fj30SMGwwX4/hqdefault.jpg" alt="Videoclip Artista X"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p>SAMUELE – Senorita (2022)</p>
+        </li>
+
+        <li class="carousel-slide">
+          <a href="https://youtu.be/7o0YTLlejFw?si=hJjD81dl0Tw8Y2wD" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/7o0YTLlejFw/hqdefault.jpg" alt="Videoclip Artista X"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p>IL CILE – Ero troppo fatto (2022)</p>
+        </li>
+
+        <li class="carousel-slide">
+          <a href="https://youtu.be/5uT66Sc-Gvk?si=3_L7bePVOo16Hjdu" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/5uT66Sc-Gvk/hqdefault.jpg" alt="Videoclip Artista X"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p>William – Mi Chiami (2022)</p>
+        </li>
+
+        <li class="carousel-slide">
+          <a href="https://youtu.be/QpbG9tW1Tl8?si=tcnqsnJYXH8we3_d" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/QpbG9tW1Tl8/hqdefault.jpg" alt="Videoclip Artista X"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p>Giansi – Calamita (2022)</p>
+        </li>
+
+        <li class="carousel-slide">
+          <a href="https://youtu.be/30uRdlHT_oQ?si=-n3GFawvGUZiMv_s" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/30uRdlHT_oQ/hqdefault.jpg" alt="Videoclip Artista X"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p>SAMUELE – Quante Cose (2021)</p>
+        </li>
+
+        <li class="carousel-slide">
+          <a href="https://youtu.be/SagnJuRUZ0U?si=WPTUqjI6cn3LycZB" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/SagnJuRUZ0U/hqdefault.jpg" alt="Videoclip Artista X"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p>Fedosmind – Anche Questa Notte (2021)</p>
+        </li>
+
+        <li class="carousel-slide">
+          <a href="https://youtu.be/-oZPDQd9nPY?si=Dyp2d0eCuVRU6WYK" target="_blank" rel="noopener noreferrer" class="video-link">
+            <div class="image-wrapper">
+              <img src="https://img.youtube.com/vi/-oZPDQd9nPY/hqdefault.jpg" alt="Videoclip Artista X"/>
+              <div class="play-icon"></div>
+            </div>
+          </a>
+          <p>Lavinia Fiorani – Ciao Ma' (2021)</p>
+        </li>
+
+      </ul>
+    </div>
+    <button class="carousel-btn next-btn" aria-label="Video successivo">&#10095;</button>
+  </div></section>
 
 <!-- PORTFOLIO FOTO -->
 <section id="portfolio-foto" class="section">

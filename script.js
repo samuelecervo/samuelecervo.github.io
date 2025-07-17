@@ -9,6 +9,19 @@ function showNextSlide() {
 
 setInterval(showNextSlide, 3000);
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+    hamburger.setAttribute('aria-expanded', !expanded);
+    navLinks.classList.toggle('open');
+  });
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const track = document.querySelector('.carousel-track');
   const slides = Array.from(track.children);
@@ -81,3 +94,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateSlideWidth();
 });
+
+

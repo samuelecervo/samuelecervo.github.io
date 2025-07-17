@@ -68,3 +68,25 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+/* Nascondi hamburger da desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 110; /* sopra la navbar */
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
