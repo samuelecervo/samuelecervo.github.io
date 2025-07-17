@@ -7,7 +7,7 @@ function showNextSlide() {
   slides[current].classList.add('active');
 }
 
-setInterval(showNextSlide, 5000);
+setInterval(showNextSlide, 3000);
 
 document.addEventListener('DOMContentLoaded', () => {
   const track = document.querySelector('.carousel-track');
