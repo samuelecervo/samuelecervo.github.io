@@ -6,12 +6,22 @@
 
 @media (max-width: 768px) {
     .gallery-grid {
-    column-count: 2; /* 1 colonna, immagini più grandi */
+    column-count: 2; 
   }
+
   .hamburger {
     display: flex;
-    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 1.5rem;
+    color: white;
   }
+
 
   /* Navbar */
   .nav-container {
@@ -44,10 +54,6 @@
     margin: 1rem 0;
   }
 
-    /* Quando nav attiva, mostra menu */
-  .nav-links.active {
-    display: flex;
-  }
 
   .nav-links li a {
     color: white;
