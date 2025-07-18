@@ -56,10 +56,6 @@
   transition: transform 0.3s ease;
 }
 
-.service-image img:hover {
-  /*transform: scale(1.05);*/
-}
-
 .care-section {
   background-color: #f3f7fb;
   border-radius: 8px;
