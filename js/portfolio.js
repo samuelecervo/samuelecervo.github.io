@@ -12,20 +12,21 @@ document.addEventListener("DOMContentLoaded", () => {
     corporate: 20
   };
 
-  const loadImages = () => {
-    for (let category in categories) {
-      const count = categories[category];
-      for (let i = 1; i <= count; i++) {
-        const img = document.createElement("img");
-        img.src = `assets/images/${category}/${i}.jpg`;
-        img.alt = `${category} ${i}`;
-        img.dataset.category = category;
-        img.classList.add("gallery-item");
-        gallery.appendChild(img);
-      }
+const loadImages = () => {
+  for (let category in categories) {
+    const count = categories[category];
+    for (let i = 1; i <= count; i++) {
+      const img = document.createElement("img");
+      img.src = `assets/images/${category}/lq/${i}.jpg`; // immagine LQ
+      img.loading = "lazy";
+      img.alt = `${category} ${i}`;
+      img.dataset.category = category;
+      img.dataset.hqSrc = `assets/images/${category}/${i}.jpg`; // immagine HQ
+      img.classList.add("gallery-item");
+      gallery.appendChild(img);
     }
-  };
-
+  }
+};
   // Filtering
   document.querySelectorAll(".filter-buttons button").forEach(button => {
     button.addEventListener("click", () => {
@@ -46,8 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Lightbox
   gallery.addEventListener("click", e => {
     if (e.target.tagName === "IMG") {
+      const hqSrc = e.target.dataset.hqSrc;
       lightbox.style.display = "flex";
-      lightboxImg.src = e.target.src;
+      lightboxImg.src = hqSrc;
     }
   });
 
