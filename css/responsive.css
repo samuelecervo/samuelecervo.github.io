@@ -48,23 +48,22 @@
   }
   
   
-
-  .nav-links {
-    display: none;
-    max-height: 0;
-    overflow: hidden;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 1rem;
-    background-color: var(--accent-color, #333);
-    border-radius: 6px;
-    width: 160px; /* ⬅️ Ridotta */
-    padding: 0.5rem; /* ⬅️ Ridotto */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    z-index: 100;
-    transition: all 0.3s ease;
-  }
+.nav-links {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 1rem;
+  background-color: var(--accent-color, #333);
+  border-radius: 6px;
+  width: 160px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 100;
+  transition: all 0.3s ease;
+}
 
   
 
