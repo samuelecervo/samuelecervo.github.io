@@ -1,4 +1,6 @@
 :root {
+    color-scheme: light; /* per browser moderni */
+
   /* Background */
   --color-bg-dark: #fdfdfd; /* background principale – quasi bianco */
   --color-bg-section-dark: #f5f5f5; /* sezioni */

@@ -1,10 +1,17 @@
 @media (min-width: 769px) {
+  :root {
+    color-scheme: light; /* forza rendering chiaro nei browser che lo supportano */
+  }
   .nav-links {
     display: flex !important;
   }
 }
 
 @media (max-width: 768px) {
+  :root {
+    color-scheme: light; /* forza rendering chiaro nei browser che lo supportano */
+  }
+  
     .gallery-grid {
     column-count: 2; 
   }
