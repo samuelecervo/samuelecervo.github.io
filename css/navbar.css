@@ -30,6 +30,8 @@
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  max-height: 0;
+  overflow: hidden;
   transition:  0.5s ease;
 }
 
@@ -87,6 +89,7 @@
     font-size: 1.5rem;
     color: black;
     font-size: 24px;
+    transition: transform 0.4s ease;
   }
 
 .hamburger span {
@@ -95,6 +98,11 @@
   background-color: var(--color-accent) !important;
   border-radius: 2px;
   transition: 0.5s ease;
-    z-index: 9999 !important;
+  z-index: 9999 !important;
+  transition: transform 0.4s ease;
+}
 
+.hamburger i {
+  transition: transform 0.4s ease;
+  display: inline-block; /* necessario per usare transform su <i> */
 }
