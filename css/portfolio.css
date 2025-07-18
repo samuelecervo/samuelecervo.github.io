@@ -129,6 +129,7 @@
   transition: transform 0.3s ease;
 }
 
+
 .category-card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px var(--color-accent-rgba);
@@ -146,4 +147,7 @@
   font-weight: bold;
   text-decoration: underline;
   text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+.category-card:hover p {
+  color:white;
 }

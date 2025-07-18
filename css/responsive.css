@@ -19,7 +19,17 @@
     cursor: pointer;
     z-index: 9999;
     font-size: 1.5rem;
-    color: white;
+    color: black;
+    font-size: 24px;
+  }
+
+  .hamburger.open i {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+
+  .logo{
+    width: 50px;
   }
 
 
@@ -36,29 +46,32 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* adatta all'altezza navbar */
+    top: 60px;
     right: 1rem;
     background-color: var(--accent-color, #333);
     border-radius: 6px;
-    width: 200px;
+    width: 160px; /* ⬅️ Ridotta */
+    padding: 0.5rem; /* ⬅️ Ridotto */
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     z-index: 100;
+    transition: all 0.3s ease;
   }
+
   
+
   .nav-links.open {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateX(0);
+    display: flex;
   }
-    .nav-links li {
-    margin: 1rem 0;
+
+  .nav-links li {
+    margin: 0.5rem 0; /* ⬅️ meno spazio */
   }
 
 
   .nav-links li a {
     color: white;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
+    font-size: 0.9rem; /* ⬅️ testo più piccolo */
+    padding: 0.4rem 0.6rem;
     display: block;
   }
 

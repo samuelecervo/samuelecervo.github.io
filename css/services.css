@@ -5,8 +5,8 @@
 }
 
 .card {
-  background: #222;
-  border: 1px solid var(--color-border-light);
+  background: white;
+  border: 1px solid var(--color-border-darkest);
   border-radius: 12px;
   padding: 2rem 1.5rem;
   text-align: center;
@@ -15,7 +15,7 @@
 
 .card:hover {
   transform: translateY(-6px);
-  background: #292929;
+  background: var(--color-hover-white);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -25,7 +25,8 @@
 }
 
 .card h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  color: black;
   margin-bottom: 0.5rem;
 }
 

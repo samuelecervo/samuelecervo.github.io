@@ -28,7 +28,6 @@
 }
 
 .service-text h3 {
-  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
   color: var(--color-text-light);
@@ -73,7 +72,6 @@
 }
 
 .care-section h2 {
-  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
   margin-bottom: 1rem;
